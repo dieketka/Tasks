@@ -1,5 +1,20 @@
 import java.util.Scanner;
 public class main {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Введите целое число: ");
+                int number = in.nextInt();
+                int factorial = number;
+
+                for (int i = (number - 1); i > 1; i--) {
+                    factorial = factorial * i;
+                }
+                System.out.println("Факториал числа: " + factorial);
+            }
+        }
+
+
+    /*
     // Поменять порядок цифр заданного числа n на обратный: 13478 -> 87431.
     public static void main(String[] args) {
         int[] reversedArray = {1, 3, 4, 7, 8};
