@@ -1,13 +1,21 @@
 import java.util.Scanner;
 public class main {
+    // Поменять порядок цифр заданного числа n на обратный: 13478 -> 87431.
     public static void main(String[] args) {
+        int[] reversedArray = {1, 3, 4, 7, 8};
+        for (int i = reversedArray.length-1; i >= 0; i--) {
+            System.out.print(reversedArray[i]);
+    }
+    }
+}
+
         /*
          * Простая (2 балла)
          *
          * Четырехзначное число назовем счастливым, если сумма первых двух ее цифр равна сумме двух последних.
          * Определить, счастливое ли заданное число, вернуть true, если это так.*/
 
-        int num = 4532; //задаем четырехзначнео число
+       /* int num = 4532; //задаем четырехзначнео число
         int a = 4 + 5; // сумма 2х первых чисел
         int b = 3 + 2; //сумма 2х последних чисел
 
@@ -57,7 +65,6 @@ public class main {
     }
 }
 
-    /*
     public static void main(String[] args) {
 
 
@@ -81,10 +88,15 @@ public class main {
             System.out.print("Неудовлетворительно");
 
         }
+        if (num == 1) {
+            System.out.print("Это провал!");
+
+        }
         if (num > 5) {
             System.out.print("Несуществующая оценка");
 
         }
+
     }
 }
 /*
