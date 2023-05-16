@@ -1,19 +1,4 @@
-import java.util.Scanner;
-public class main {
-
-    //5.Вычисление факториала
-            public static void main(String[] args) {
-                Scanner in = new Scanner(System.in);
-                System.out.print("Введите целое число: ");
-                int number = in.nextInt();
-                int factorial = number;
-
-                for (int i = (number - 1); i > 1; i--) {
-                    factorial = factorial * i;
-                }
-                System.out.println("Факториал числа: " + factorial);
-            }
-        }
+package homework1_2_3_4;
 
 
 
@@ -22,13 +7,15 @@ public class main {
         int[] reversedArray = {1, 3, 4, 7, 8};
         for (int i = reversedArray.length-1; i >= 0; i--) {
             System.out.print(reversedArray[i]);
-    }
+        }
     }
 }
 
         /*
          3.Четырехзначное число назовем счастливым, если сумма первых двух ее цифр равна сумме двух последних.
-         Определить, счастливое ли заданное число, вернуть true, если это так.*/
+         Определить, счастливое ли заданное число, вернуть true, если это так.
+*/
+
 
         public static void main(String[] args) {
         int num = 4532; //задаем четырехзначнео число
@@ -110,7 +97,7 @@ public class main {
 
     }
 }
-/*
+
     public static void main(String[] args) {
         int [] array = new int[] {1,2,3,4,5};
         for (int i : array){
